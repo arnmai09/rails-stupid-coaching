@@ -1,0 +1,10 @@
+<h1>Test for the answer view</h1>
+<% if @question.blank? %>
+"Put your question "
+<% else %>
+<%= @question %>
+<% end %>
+
+<br>
+<%= @answer %>
+<%= link_to "ask a new question" ,  ask_path %>
